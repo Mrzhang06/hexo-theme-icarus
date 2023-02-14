@@ -47,6 +47,12 @@
             "enum": [true, false, "auto"],
             "nullable": true
         },
+		"original": {
+			"type": "boolean",
+			"description": "This is to show Copyright information in your article head, default is true, if your article is reprinted, you need add a field named 'copy_from' and reprinted article URL in your article front-matter",
+			"default": true,
+			"nullable": false
+		},
         "licenses": {
             "$ref": "/misc/poly_links.json",
             "description": "Article licensing block",
