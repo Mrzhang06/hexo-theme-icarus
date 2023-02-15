@@ -7,7 +7,6 @@ module.exports = class extends Component {
 
 		const isCopy =  page.copy_from // 是否为转载的文章
 		const url = isCopy ? page.copy_from : page.permalink // 来源链接地址
-		// const original = config.original
 
        if (article.original) {
 			return <div class={'copyright article-block ' + (isCopy ? 'type-1' : 'type-2') }>
