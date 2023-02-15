@@ -92,7 +92,7 @@ module.exports = class extends Component {
                         {index ? <a class="link-muted" href={url_for(page.link || page.path)}>{page.title}</a> : page.title}
                     </h1> : null}
 					{ /* 版权声明 */}
-						{article.original ?  <CopyRight config={config} page={page} helper={helper} /> : null}
+						{is_post() ? <CopyRight config={config} page={page} helper={helper} /> : null}
                     {/* Content/Excerpt */}
                     <div class="content" dangerouslySetInnerHTML={{ __html: index && page.excerpt ? page.excerpt : page.content }}></div>
                     {/* Licensing block */}
